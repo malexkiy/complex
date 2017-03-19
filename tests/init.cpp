@@ -61,21 +61,21 @@ SCENARIO("complex op*(int)", "[op*(int)]") {
 	REQUIRE(c == d);
 }
 
-SCENARIO("complex op*(int)", "[op*(int)]") {
+SCENARIO("complex op/(int)", "[op/(int)]") {
 	Complex c(3, 4), d(6, 8);
 
 	d = d / 2;
 	REQUIRE(c == d);
 }
 
-SCENARIO("complex op*(int)", "[op*(int)]") {
+SCENARIO("complex op*=(int)", "[op*=(int)]") {
 	Complex c(3, 4), d(6, 8);
 
 	c *= 2;
 	REQUIRE(c == d);
 }
 
-SCENARIO("complex op*(int)", "[op*(int)]") {
+SCENARIO("complex op/=(int)", "[op/=(int)]") {
 	Complex c(3, 4), d(6, 8);
 
 	d /= 2;
@@ -124,7 +124,7 @@ SCENARIO("complex op*=", "[op*=]") {
 	REQUIRE((c *= d) == e);
 }
 
-SCENARIO("complex op/", "[op/]") {
+SCENARIO("complex op/=", "[op/=]") {
 	Complex c(3, 4), d(6, 8), e(0.5, 0);
 
 	REQUIRE((c /= d) == e);
